@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <!--<h1>Pomodoro Timer</h1>-->
+    <h2 id="quote"></h2>
+    <!--<button onclick="newQuote()">My quote</button>-->
+
+    <script>
+    const quotes = [
+        "Stay hard!",
+        "STAY FUCKING HARD!",
+        "Who's gonna carry the boats?  ...and the logs?",
+        "You're gonna do it",
+        "You don't know me son!",
+        "You're just a bitch",
+        "This is your new normal",
+        "Absolute savage",
+        "It sucks...It just fucking sucks",
+        "Take their fucking souls",
+        "I wish the water was cold",
+        "Stop when you're done",
+        "You really are a bitch",
+        "Do some fucking shit",
+        "Don't stop when you're tired",
+        "You don't know shit",
+        "Talk less, do more"
+        ];
+    
+    function newQuote() {
+        const random = Math.floor(Math.random() * quotes.length);
+        document.getElementById("quote").innerText = quotes[random];
+        console.log("It changed", quotes[random]);
+    }
+
+    newQuote();
+
+    setInterval(newQuote, 300000);
+    </script>
+
+    <div id="timer">25:00</div>
+
+    <div class="buttons">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="reset">Reset</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
