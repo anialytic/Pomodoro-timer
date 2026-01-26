@@ -1,11 +1,13 @@
 body {
     font-family: "Press Start 2P", monospace;
-    background: #000;
-    color: #00CC00;
+    background: #010100;
+    
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    filter: blur(0.5px);
 }
 
 .container {
@@ -15,17 +17,31 @@ body {
 #timer {
     font-size: 64px;
     margin: 20px 0;
+    color: #1FC742;
+    text-shadow: 0 0 5px #1FC742;
 }
 
 button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-color:#000;
+    border-radius: 50%;
+    border-width: 10px;
+    background-color: #000;
+    color: #1AA93B;
     padding: 10px 20px;
     font-size: 16px;
     margin: 5px;
     cursor: pointer;
+    text-shadow: 0 0 5px #1AA93B;
+    filter: blur(0.5px);
 }
 
 #quote {
-    font-size: 36px;
+    font-size: 30px;
     max-width: 700px;
-    text-align: center;
+    transform: translateY(-25px);
+    color: #1FC742;
+    text-shadow: 0 0 5px #1FC742;
 }
