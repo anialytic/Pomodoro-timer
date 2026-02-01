@@ -1,18 +1,24 @@
 <!DOCTYPE html>
+<!-- set language -->
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
+    <!-- set site title -->
     <title>Pomodoro Timer</title>
+    <!-- connect to style -->
     <link rel="stylesheet" href="style.css">
+    <!-- set the unique font-->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 </head>
 <body>
-
+<!-- add container class-->
 <div class="container">
+    <!-- delete?-->
     <h2 id="quote"></h2>
 
     <script>
+    <!-- add quotes-->
     const quotes = [
         "Stay hard!",
         "STAY ******* HARD!",
@@ -32,7 +38,7 @@
         "You don't know ****",
         "Talk less, do more"
         ];
-    
+    <!-- randomize quotes -->
     function newQuote() {
         const random = Math.floor(Math.random() * quotes.length);
         document.getElementById("quote").innerText = quotes[random];
@@ -40,19 +46,19 @@
     }
 
     newQuote();
-
+    <!-- set time interval -->
     setInterval(newQuote, 300000);
     </script>
-
+    <!-- add timer id-->
     <div id="timer">25:00</div>
-
+    <!-- start, pause, reset buttons -->
     <div class="buttons">
         <button id="start" style="font-size: 30px; padding: 10px 20px; cursor: pointer;">►</button>
         <button id="pause" style="font-size: 30px; padding: 10px 20px; cursor: pointer;">⏸︎</button>
         <button id="reset" style="font-size: 30px; padding: 10px 20px; cursor: pointer;">⏹︎</button>
     </div>
 </div>
-
+<!-- connect to js-->
 <script src="script.js"></script>
 </body>
 </html>
