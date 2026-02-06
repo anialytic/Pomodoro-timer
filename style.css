@@ -1,3 +1,4 @@
+/* set style */
 body {
     font-family: "Press Start 2P", monospace;
     background: #010100;
@@ -10,10 +11,12 @@ body {
     filter: blur(0.5px);
 }
 
+/* set container style*/
 .container {
     text-align: center;
 }
 
+/* set timer style */
 #timer {
     font-size: 64px;
     margin: 20px 0;
@@ -21,6 +24,7 @@ body {
     text-shadow: 0 0 5px #1FC742;
 }
 
+/*set button style */
 button {
     width: 100px;
     height: 100px;
@@ -38,6 +42,7 @@ button {
     filter: blur(0.5px);
 }
 
+/* set quotes style */
 #quote {
     font-size: 30px;
     max-width: 700px;
