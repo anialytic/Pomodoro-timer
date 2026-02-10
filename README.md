@@ -20,6 +20,7 @@ pomodoro-timer/
 ├── index.html  
 ├── style.css  
 ├── script.js  
+├── pictures/
 └── README.md  
 
 ## Невдовзі...
